@@ -12,8 +12,17 @@ A C implementation of Conway’s Game of Life using SDL2.
 Requires SDL2 development libraries.
 
 ```sh
+# Clone
+git clone git@github.com:Nathan5563/game-of-life.git
+
 # Build
 make
 
 # Run
 ./gol
+```
+
+## Controls
+- The simulation advances automatically.
+- Close the window to exit.
+- Change initial pattern: edit the `draw(&window, &surface, x, y);` calls near the start of main() in main.c to toggle different cells for custom patterns.
